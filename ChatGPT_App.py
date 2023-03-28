@@ -6,7 +6,7 @@ import openai
 import os
 from contextlib import closing
 
-openai.api_key = "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" #os.environ["OPENAI_API_KEY"]
+openai.api_key = os.environ["OPENAI_API_KEY"]
 my_config = Config(
     region_name = 'us-west-2'
 )
